@@ -1,0 +1,260 @@
+/*-----------------------------------------------------------------------------------
+
+/*--------------------------------*/
+/*  2. Header top Area
+/*--------------------------------*/
+/*----------------------------------------*/
+/*  2.1 Header Bottom Area
+/*----------------------------------------*/
+.header-one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+}
+.header-area{
+	background:header-area;
+}
+.logo {
+    display: block;
+}
+.logo a {
+    display: inline-block;
+    height: auto;
+    padding: 27px 0;
+}
+.main-menu ul.navbar-nav li {
+    float: left;
+    position: relative;
+}
+.main-menu ul.navbar-nav li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 40px 15px;
+    text-transform: capitalize;
+    position: relative;
+}
+.main-menu > ul.navbar-nav >li >a::before {
+    position: absolute;
+    content: "";
+    left: 16px;
+    bottom: 34px;
+    border: 1px solid #5074a4;
+    width:0;
+    transition: 0.4s;
+    opacity: 0;
+}
+.header-area.stick .main-menu > ul.navbar-nav >li >a::before {
+    left: 16px;
+    bottom: 27px;
+}
+.main-menu > ul.navbar-nav >li >a:hover::before {
+    width:50%;
+    transition: 0.4s;
+    opacity: 1;
+}
+.main-menu ul.navbar-nav li a:hover{
+    color: #98ccec;
+}
+.main-menu ul.navbar-nav li.active a:focus {
+    color: #fff;
+}
+/* .main-menu ul.navbar-nav li.active a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: blue;
+    position: relative;
+    z-index: 9999999;
+} */
+.navbar {
+    border: medium none;
+    margin-bottom: 0;
+}
+.navbar-default {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.main-menu ul.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background: none;
+    color:#fff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #fff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background: none;
+}
+.main-menu ul.nav li ul.sub-menu {
+    background: #fff;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 115%;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    width: 200px;
+    z-index: -99;
+	padding: 10px 0px;
+    border-radius: 3px;
+}
+.pagess {
+    position: relative;
+}
+.navbar.navbar-default {
+    float: right;
+}
+.main-menu ul.nav li ul.sub-menu li {
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.main-menu ul.nav li:hover ul.sub-menu{
+    top:100%;
+    opacity:1;
+    z-index:999;
+    visibility:visible;
+}
+/* .main-menu ul.nav li ul.sub-menu li a {
+    color: blue;
+    display: block;
+    font-size: 15px;
+    padding: 5px 20px;
+} */
+/* .main-menu ul.nav li ul.sub-menu li a span{
+    color: blue;
+} */
+/* .main-menu ul.nav li:hover ul.sub-menu li a:hover{
+    color: blue;
+} */
+.header-right-link {
+    float: right;
+    width: 180px;
+    padding: 37px 0px;
+    margin-left: 70px;
+    text-align: right;
+}
+.slice-btn {
+    display: inline-block;
+    padding: 0px 15px;
+}
+/* .slice-btn span {
+    font-size: 20px;
+    font-weight: 500;
+    color: blue;
+    cursor: pointer;
+    line-height: 28px;
+} */
+/* .s-menu {
+    padding: 10px 20px;
+    border: 1px solid blue;
+    background: blue;
+    color: #fff;
+    transition: 0.4s;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 2px;
+} */
+/* .s-menu:hover {
+    border: 1px solid blue;
+    background: transparent;
+	color:blue;
+    transition: 0.4s;
+} */
+.header-area.stick  .header-right-link {
+    padding: 27px 0px;
+}
+/*--------------------------------*/
+/* 2.2. Sticky Header Area
+/*--------------------------------*/
+.header-area.stick {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+    box-shadow: 0px 0px 3px #ddd, -2px -2px 3px #ddd;
+    background: #f9f9f9;
+}
+.header-area.stick .logo a {
+    display: inline-block;
+    height: auto;
+    padding: 17px 0;
+}
+
+.header-area.stick .logo .brand-logo{
+    display: none;
+   
+}
+
+.brand-logo-2{
+    display: none;
+}
+
+.header-area.stick .logo .brand-logo-2{
+    display: inline-block;
+   
+}
+.header-area.stick .main-menu ul.navbar-nav li a {
+    padding: 30px 15px;
+    color: black;
+}
+/* .header-area.stick .main-menu ul.nav li ul.sub-menu li a {
+    color: blue;
+    display: block;
+    padding: 5px 15px;
+} */
+/* .header-area.stick .main-menu ul.nav li ul.sub-menu li a:hover{
+    color: blue;
+} */
+/*----------------------------------------*/
+/*  2.3. Mobile Menu Area
+/*----------------------------------------*/
+.mobile-menu-area {
+    background: #98ccec none repeat scroll 0 0;
+    padding: 10px 0px ;
+}
+.mean-container .mean-bar::after {
+    content: "";
+    font-size: 21px;
+    left: 5%;
+    position: absolute;
+    top: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.mean-container a.meanmenu-reveal:hover {
+    color:black;
+}
+.mean-container .mean-nav ul {
+    list-style-type: none;
+    margin: 20px 0px;
+    padding: 0;
+    width: 100%;
+}
+.mean-container .mean-nav ul li a {
+    background: #fdfcfc none repeat scroll 0 0;
+    color: black;
+    display: block;
+    float: left;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    padding: 13px 10px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 90%;
+}
+.mean-nav ul li.mean-last {
+    margin-bottom: 20px;
+}
+/* .mean-container .mean-nav ul li a.mean-expand {
+    color: #1AA15F;
+    line-height: 17px;
+} */
+.mean-container .mean-nav ul li {
+    width: 99.7%;
+}
